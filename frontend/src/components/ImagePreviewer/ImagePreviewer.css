@@ -1,0 +1,7 @@
+.ImagePreviewer {
+  padding: 5px;
+}
+
+.ImagePreviewer img {
+  width: 95vw;
+}

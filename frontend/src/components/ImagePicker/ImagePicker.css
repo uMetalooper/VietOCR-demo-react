@@ -1,0 +1,7 @@
+.ImagePicker {
+  padding: 10px;
+}
+
+.ImagePicker input {
+  display: none;
+}
