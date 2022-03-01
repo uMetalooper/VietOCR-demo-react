@@ -8,8 +8,12 @@ import OutputTextViewer from "components/OutputTextViewer";
 const Body = () => {
   const [imagePreviewData, setImagePreviewData] = useState("");
   const [outputText, setOutputText] = useState("");
+
+  // const url = "http://localhost:8000"
+  const url = "https://7ce3-18-141-213-254.ngrok.io";
+
   const onPredict = async (postData) => {
-    const res = await fetch("http://localhost:8000/api/v1/vietocr_predict", {
+    const res = await fetch(`${url}/api/v1/vietocr_predict`, {
       method: "POST",
       headers: {
         "Content-type": "application/json",
